@@ -1,0 +1,4 @@
+/lore
+**/node_modules
+/rag-server/db
+/rag-server/pdfs
