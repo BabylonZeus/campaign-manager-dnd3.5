@@ -1,6 +1,11 @@
-# Campagne D&D 3.5 — dépôt outillage et lore
+# Campagne D&D 3.5 — repo outillage et lore
 
-Ce dépôt regroupe le **lore de campagne** en Markdown et un **serveur RAG** (recherche sémantique sur des PDF de règles) exposé à Cursor via **MCP**.
+Ce repo a pour but de :
+
+- faciliter l'accès au **fonctionnement de D&D 3.5**, dont le contenu est historiquement réparti dans de nombreuses sources (livres, magasines, sites web, ...) ;
+- faciliter la **synthèse et l'accès au lore** de campagnes créées par le MJ dont le contenu peut être dans de nombreuses pages (testé avec **World Anvil** comme source).
+
+Ce repo regroupe le **lore de campagne** en Markdown et un **serveur RAG** (recherche sémantique sur des PDF de règles) exposé à Cursor via **MCP**.
 
 ## Contenu principal
 
@@ -19,7 +24,12 @@ Les PDF de règles ne sont pas versionnés : ils restent en local, comme la base
 
 # D&D 3.5 campaign — tooling and lore
 
-This repo holds **campaign lore** as Markdown and a **RAG server** (semantic search over rule PDFs) exposed to Cursor via **MCP**.
+This repository aims to:
+
+- make **D&D 3.5 rules and play** easier to work with, given how the material is spread across many historical sources (books, magazines, websites, …);
+- make it easier to **synthesize and browse campaign lore** created by the GM across many pages—**World Anvil** has been tested as a source.
+
+It brings together **campaign lore** as Markdown and a **RAG server** (semantic search over rule PDFs) exposed to Cursor via **MCP**.
 
 ## Main pieces
 
