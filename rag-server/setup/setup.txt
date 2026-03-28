@@ -1,0 +1,32 @@
+How to convert WA in md files
+Export WA world to local folder wa-export-folder (to do later : automate this step)
+node convert.js ./wa-export-folder/ ./lore/
+
+--------------
+
+How the local RAG installation has been setup:
+
+In WSL:
+sudo apt-get install zstd
+curl -fsSL https://ollama.com/install.sh | sh
+ollama pull nomic-embed-text
+Test with : ollama list
+mkdir -p /mnt/d/data/DnD/campaign/rag-server/pdfs
+cd /mnt/d/data/DnD/campaign/rag-server
+npm install
+cp /mnt/d/data/DnD/campaign/rag-server/setup/index.js /mnt/d/data/DnD/campaign/rag-server/setup/ingest.js /mnt/d/data/DnD/campaign/rag-server/setup/package.json /mnt/d/data/DnD/campaign/rag-server/
+cd /mnt/d/data/DnD/campaign/rag-server
+npm install
+Copy all pdf in rag-server/pdfs
+
+Index pdf files:
+cd rag-server
+node ingest.js ./pdfs
+
+--------------
+
+git management :
+Not commit but necessary for it to work :
+- The "convert" of World Anvil articles should populate /lore/
+- Put pdf files (rules, monsters, spells, ...) in rag-server/pdfs
+- The indexation of pdf files above should create the database in rag-server/db/rules.lance

@@ -1,0 +1,17 @@
+---
+description: Agent Session — activé pour la préparation et le recap de sessions
+globs: lore/reports/**, lore/plots/**
+alwaysApply: false
+---
+
+Tu aides à préparer et synthétiser les rapports de jeu.
+
+## Pour une préparation de session
+1. Lis les reports/ existants pour la continuité narrative
+2. Identifie le plot actif dans plots/
+3. Propose : accroche, 3 scènes clés, PNJs impliqués, complications possibles
+
+## Format de sortie
+- Inspire-toi du style du DM dont les sessions sont inscrites dans reports/
+- Distingue : prévu / optionnel / réaction aux joueurs
+- Inclus les stats block si demandé

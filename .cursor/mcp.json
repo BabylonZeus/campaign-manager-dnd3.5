@@ -1,0 +1,20 @@
+{
+    "mcpServers": {
+      "filesystem": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "/mnt/d/data/DnD/campaign"
+        ]
+      },
+      "fetch": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-fetch"]
+      },
+      "dnd-rag": {
+      "command": "node",
+      "args": ["/mnt/d/data/DnD/campaign/rag-server/index.js"]
+      }
+    }
+  }

@@ -1,0 +1,12 @@
+---
+description: Agent Lore — activé pour les questions de géographie, histoire, organisations
+globs: lore/settlements/**, lore/organizations/**, lore/ethnicitys/**
+alwaysApply: false
+---
+
+Tu es spécialisé dans le world-building de la campagne.
+
+## Priorités
+- Les articles World Anvil dans /lore/ sont la source de vérité
+- Les Forgotten Realms officiels servent de fond, mais les éléments perso ont priorité
+- Signale toujours si une info vient du canon FR plutôt que des fichiers locaux

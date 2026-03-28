@@ -1,0 +1,16 @@
+{
+  "name": "dnd-rag-server",
+  "version": "1.0.0",
+  "description": "RAG MCP server pour campagne D&D",
+  "type": "module",
+  "scripts": {
+    "ingest": "node ingest.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "vectordb": "^0.4.20",
+    "pdf-parse": "^1.1.1",
+    "node-fetch": "^3.3.2"
+  }
+}
