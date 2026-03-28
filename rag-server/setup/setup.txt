@@ -1,5 +1,6 @@
 How to convert WA in md files
-Export WA world to local folder wa-export-folder (to do later : automate this step)
+From repo root (folder containing convert.js and lore/).
+Export WA world to local folder wa-export-folder — JSON + assets per your WA export workflow (to do later : automate this step)
 node convert.js ./wa-export-folder/ ./lore/
 
 --------------
@@ -22,6 +23,8 @@ Copy all pdf in rag-server/pdfs
 Index pdf files:
 cd rag-server
 node ingest.js ./pdfs
+(Ollama must be running on localhost:11434 for ingest and for Cursor MCP search.)
+Cursor MCP: .cursor/mcp.json runs rag-server/index.js (tool search_rules) — edit paths if repo root moves.
 
 --------------
 
