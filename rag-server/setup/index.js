@@ -1,5 +1,5 @@
 // index.js — MCP Server RAG pour campagne D&D
-// Expose l'outil search_rules(query) à Cursor via le protocole MCP
+// Expose l'outil search_dnd(query) à Cursor via le protocole MCP
 // Lancement : node index.js
 
 import path from "path";
@@ -87,7 +87,7 @@ const server = new Server(
 server.setRequestHandler(ListToolsRequestSchema, async () => ({
   tools: [
     {
-      name: "search_rules",
+      name: "search_dnd",
       description:
         "Recherche sémantique dans les règles D&D indexées (PHB, DMG, MM, suppléments, homebrews). " +
         "Retourne les passages les plus pertinents pour une question de règle ou de lore officiel.",
@@ -118,7 +118,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
 
-  if (name !== "search_rules") {
+  if (name !== "search_dnd") {
     throw new Error(`Outil inconnu : ${name}`);
   }
 

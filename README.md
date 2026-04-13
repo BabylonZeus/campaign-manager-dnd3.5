@@ -13,7 +13,7 @@ Ce repo regroupe le **lore de campagne** en Markdown et un **serveur RAG** (rech
 |--------|------|
 | `lore/` | Articles de campagne (ex. export World Anvil en `.md`) : personnages, lieux, intrigues, etc. |
 | `convert.js` | Export World Anvil (JSON) → Markdown dans `lore/`. |
-| `rag-server/` | Indexation des PDF (LanceDB + Ollama) et serveur MCP `search_rules`. |
+| `rag-server/` | Indexation des PDF (LanceDB + Ollama) et serveur MCP `search_dnd`. |
 | `.cursor/` | Règles pour l’assistant MJ et configuration MCP. |
 
 Les PDF de règles ne sont pas versionnés : ils restent en local, comme la base générée après indexation.
@@ -37,7 +37,7 @@ It brings together **campaign lore** as Markdown and a **RAG server** (semantic 
 |------|---------|
 | `lore/` | Campaign articles (e.g. World Anvil export as `.md`): characters, locations, plots, etc. |
 | `convert.js` | World Anvil export (JSON) → Markdown under `lore/`. |
-| `rag-server/` | PDF indexing (LanceDB + Ollama) and MCP server `search_rules`. |
+| `rag-server/` | PDF indexing (LanceDB + Ollama) and MCP server `search_dnd`. |
 | `.cursor/` | GM assistant rules and MCP configuration. |
 
 Rule PDFs and the generated vector DB are not tracked in git; keep them local.
