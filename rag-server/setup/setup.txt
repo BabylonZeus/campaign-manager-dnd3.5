@@ -1,7 +1,8 @@
-How to convert WA in md files
-From repo root (folder containing convert.js and lore/).
-Export WA world to local folder wa-export-folder — JSON + assets per your WA export workflow (to do later : automate this step)
-node convert.js ./wa-export-folder/ ./lore/
+How to convert WA in md files :
+1) Exporter le monde WA : https://www.worldanvil.com/world/8cb142e6-c3ce-4b1e-b33e-55ff69cd8938/edit
+2) Le sauvegarder dans D:\data\DnD\World-Forgotten Realms-2e6
+3) From repo root (folder containing convert.js and lore/) :
+node convert.js ../World-Forgotten\ Realms-2e6/ ./lore/
 
 --------------
 
