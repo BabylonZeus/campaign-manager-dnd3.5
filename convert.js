@@ -136,6 +136,8 @@ function buildFrontmatter(data) {
     lines.push('world: "' + esc(data.world.title) + '"');
   if (data.url)
     lines.push('wa_url: "' + data.url + '"');
+  if (data.block && data.block.url)
+    lines.push('statblock: "' + esc(data.block.url) + '"');
 
   // Champs spécifiques Person
   if (data.rpgAlignment) lines.push('alignment: "' + esc(data.rpgAlignment) + '"');
